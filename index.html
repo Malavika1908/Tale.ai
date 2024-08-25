@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tale-ai: Lost in the Haze of Memories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .interactive {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .interactive:hover {
+            color: darkblue;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            max-width: 150px; /* Adjust the size as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://i.ibb.co/6wrYsq0/Screenshot-2024-08-26-022626.png"  alt="Tale-ai Logo">
+            <h1>TALE-AI</h1>
+            <p class="tagline">Explore the stories that live within us, where memories linger like a warm embrace.</p>
+        </header>
+
+        <div id="welcome-section">
+            <h2>Welcome to TALE-AI</h2>
+            <p>What's your name ?</p>
+            <input type="text" id="userName" placeholder="Enter your name">
+            <button onclick="showStoryDetails()">Begin Your Nostalgic Journey</button>
+            <p id="greeting-message"></p>
+        </div>
+
+        <div id="story-details" style="display: none;">
+            <h2>Let's Craft Your Tale</h2>
+            <p>What shall we name your story?</p>
+            <input type="text" id="storyName" placeholder="Enter your story's name">
+            <p>Who is the main character in this tale?</p>
+            <input type="text" id="characterName" placeholder="Enter the character's name">
+            <button onclick="showContentForm()">Continue</button>
+        </div>
+
+        <div id="content-section" style="display: none;">
+            <h2>Let's Craft Your Story</h2>
+            <form id="contentForm">
+                <div class="form-group">
+                    <label for="interests">Select Your Interest:</label>
+                    <select id="interests" name="interests">
+                        <option value="technology">Technology</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="literature">Literature</option>
+                        <option value="sports">Sports</option>
+                        <option value="music">Music</option>
+                        <option value="art">Art</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reading-level">Choose Reading Level:</label>
+                    <select id="reading-level" name="reading_level">
+                        <option value="easy">Easy</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Preferred Tone:</label>
+                    <select id="tone" name="tone">
+                        <option value="formal">Formal</option>
+                        <option value="informal">Informal</option>
+                        <option value="humorous">Humorous</option>
+                        <option value="serious">Serious</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="length">Content Length:</label>
+                    <input type="text" id="length" name="length" placeholder="Enter content length in words">
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-notes">Additional Notes:</label>
+                    <textarea id="additional-notes" name="additional_notes" placeholder="Any specific requirements or notes..."></textarea>
+                </div>
+
+                <button type="button" onclick="generatePreview()">Generate Content Preview</button>
+            </form>
+        </div>
+
+        <div id="content-preview" style="display: none;">
+            <h2>Content Preview</h2>
+            <p id="preview-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light cyan background for a fresh look */
+    color: #333333; /* Darker text color for better readability */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for modern look */
+    max-width: 100%; /* Ensure container is responsive */
+    width: 600px;
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+/* Header Styling */
+header img {
+    max-width: 120px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto; /* Center image and add margin */
+}
+
+h1 {
+    text-align: center;
+    color: #00796b; /* Teal color for a modern look */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #004d40; /* Darker teal for sub-headings */
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #00796b; /* Teal border for inputs */
+    background-color: #ffffff; /* White background for inputs */
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* Button Styling */
+button {
+    background-color: #00796b; /* Teal color for buttons */
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal for button hover */
+}
+
+/* FAQ Section */
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    margin-bottom: 8px;
+    color: #00796b; /* Teal color for FAQ headings */
+}
+
+/* Content Preview Section */
+#content-preview {
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for preview */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for modern look */
+}
+
+#preview-text p {
+    color: #333333; /* Dark text color for readability */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Welcome Section (Initial Greeting) */
+#welcome-section {
+    text-align: center;
+}
+
+#welcome-section input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #00796b;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+#welcome-section button {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#welcome-section button:hover {
+    background-color: #004d40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        font-size: 14px;
+    }
+}
